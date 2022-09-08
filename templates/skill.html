@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Найдено со скилом {{skill}}: {{count}}</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+</head>
+<body>
+<div>
+<h1>Найдено со скилом {{skill}}: {{count}}</h1>
+{%for candidate in found%}
+<p><a href="/candidates/{{candidate.id}}">{{candidate.name}}</a></p>
+{%endfor%}
+</div>
+</body>
+</html>
